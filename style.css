@@ -7,7 +7,7 @@ header {
     font-size: 10px;
 }
 
-.container {
+#customerProfiles {
     display:flex;
     flex-wrap:wrap;
     align-items: stretch;
@@ -16,8 +16,8 @@ header {
 }
 
 .card {
-    /* border-style: groove;
-    border-width:0.01cm; */
+    border-style: groove;
+    border-width:0.01cm;
     height: 350px;
     margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
