@@ -32,18 +32,21 @@ console.log(customers);
         customerCard.appendChild(customerSt);
         // added street number and name
 
+    let formattedState = nameToAbbr(customer.location.state)
     let customerRegion = document.createElement('p');
-        customerRegion.innerText = `${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`;
+        customerRegion.innerText = `${customer.location.city}, ${formattedState} ${customer.location.postcode}`;
         customerCard.appendChild(customerRegion);
         // added city, state and zipcode
  
+    let formattedDOB = moment(customer.dob.date).format("MMM Do YYYY");
     let customerDOB = document.createElement('p');
-        customerDOB.innerText = `DOB: ${customer.dob.date}`;
+        customerDOB.innerText = `DOB: ${formattedDOB}`;
         customerCard.appendChild(customerDOB);
         // added date of birth
 
+    let formattedRegistration = moment(customer.dob.date).format("MMM Do YYYY");
     let customerSince = document.createElement('p');
-        customerSince.innerText = `Customer since: ${customer.registered.date}`;
+        customerSince.innerText = `Customer since: ${formattedRegistration}`;
         customerCard.appendChild(customerSince);
         // added customer since to customer card
         

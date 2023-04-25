@@ -18,7 +18,7 @@ header {
 .card {
     border-style: groove;
     border-width:0.01cm;
-    height: 350px;
+    height: 300px;
     margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
@@ -35,8 +35,8 @@ header {
 
 .customerImage {
     border-radius: 50px;
-    /* padding: 10px 5% 10px;
-    height: 110px; */
+    padding: 10px 5% 10px;
+    height: 80px;
 }
 
 
