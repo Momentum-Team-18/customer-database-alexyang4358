@@ -20,6 +20,7 @@ console.log(customers);
     let customerName = document.createElement('h2');
         customerName.innerText = `${customer.name.first} ${customer.name.last}`;
         customerCard.appendChild(customerName);
+        customerName.classList.add("camel")
         // added the name of each customer to card
     
     let customerEmail = document.createElement('p');
@@ -38,13 +39,13 @@ console.log(customers);
         customerCard.appendChild(customerRegion);
         // added city, state and zipcode
  
-    let formattedDOB = moment(customer.dob.date).format("MMM Do YYYY");
+    let formattedDOB = moment(customer.dob.date).format("MMM D, YYYY");
     let customerDOB = document.createElement('p');
         customerDOB.innerText = `DOB: ${formattedDOB}`;
         customerCard.appendChild(customerDOB);
         // added date of birth
 
-    let formattedRegistration = moment(customer.dob.date).format("MMM Do YYYY");
+    let formattedRegistration = moment(customer.dob.date).format("MMM D, YYYY");
     let customerSince = document.createElement('p');
         customerSince.innerText = `Customer since: ${formattedRegistration}`;
         customerCard.appendChild(customerSince);

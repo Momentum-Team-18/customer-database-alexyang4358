@@ -16,8 +16,8 @@ header {
 }
 
 .card {
-    border-style: groove;
-    border-width:0.01cm;
+    /* border-style: groove;
+    border-width:0.01cm; */
     height: 300px;
     margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,10 +34,11 @@ header {
 
 
 .customerImage {
-    border-radius: 50px;
+    border-radius: 40px 50px;
     padding: 10px 5% 10px;
     height: 80px;
 }
 
-
-
+.camel {
+text-transform: capitalize;
+}
